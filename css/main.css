@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: url("../assets/main-background.jpg");
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Taskbar */
+.taskbar {
+  background: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.taskbar-item i {
+  padding: 0.7em 0.9em;
+  height: 100%;
+  color: white;
+}
+
+.taskbar-item {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskbar-item:hover {
+  background: #3939398a;
+}
+
+.taskbar-item .windows-logo {
+  font-size: 20px;
+}
+
+.taskbar-item:hover .windows-logo {
+  color: rgb(54, 174, 230);
+}
+
+.taskbar-item .search-logo {
+  font-size: 18px;
+  transform: rotate(90deg);
+}
+
+.taskbar-item .settings-logo {
+  font-size: 18px;
+  transform: rotate(90deg);
+}
+
+.taskbar-item .chrome-logo {
+  font-size: 20px;
+}
+.taskbar-item:hover .chrome-logo {
+  color: rgb(0, 162, 255);
+}
+
+.taskbar-item .folder-logo {
+  font-size: 20px;
+}
+.taskbar-item:hover .folder-logo {
+  color: rgb(223, 203, 19);
+}
+
+/* Taskbar Tray */
+.taskbar-tray .windows-tray {
+  /* display: none; */
+  background: #393939fb;
+  position: absolute;
+  bottom: 48px;
+  transition: all 0.2s ease;
+}

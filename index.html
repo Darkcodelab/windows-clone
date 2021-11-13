@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="taskbar">
+        <div class="taskbar-item">
+          <i class="fab fa-windows windows-logo" id="windowsLogo"></i>
+        </div>
+        <div class="taskbar-item">
+          <i class="fas fa-search search-logo"></i>
+        </div>
+        <div class="taskbar-item">
+          <i class="fas fa-sliders-h settings-logo"></i>
+        </div>
+        <div class="taskbar-item">
+          <i class="fas fa-folder folder-logo"></i>
+        </div>
+        <div class="taskbar-item">
+          <i class="fab fa-chrome chrome-logo"></i>
+        </div>
+      </div>
+      <div class="taskbar-tray">
+        <div class="windows-tray" id="windowsTray"></div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/windowsTray.js"></script>
+  </body>
+</html>
