@@ -33,14 +33,31 @@
           <i class="fas fa-folder folder-logo"></i>
         </div>
         <div class="taskbar-item">
-          <i class="fab fa-chrome chrome-logo"></i>
+          <i class="fab fa-chrome chrome-logo" id="chrome"></i>
         </div>
       </div>
       <div class="taskbar-tray">
         <div class="windows-tray" id="windowsTray"></div>
       </div>
+      <div class="app-windows">
+        <div class="chrome-window" id="chromeWindow">
+          <div class="app-action-bar" id="appActionBar" data-appName="chrome">
+            <i class="fas fa-times app-action-close"></i>
+            <i class="far fa-square app-action-maximize"></i>
+            <i class="fas fa-minus app-action-minimize"></i>
+          </div>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.google.com/search?igu=1"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
     </div>
     <script src="./js/main.js"></script>
     <script src="./js/windowsTray.js"></script>
+    <script src="./js/chromeWindow.js"></script>
+    <script src="./js/statusBarActionButtons.js"></script>
   </body>
 </html>

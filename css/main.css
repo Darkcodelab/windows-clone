@@ -72,9 +72,41 @@
 
 /* Taskbar Tray */
 .taskbar-tray .windows-tray {
-  /* display: none; */
   background: #393939fb;
   position: absolute;
   bottom: 48px;
   transition: all 0.2s ease;
+}
+
+/*App Windows*/
+.app-action-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  background: rgb(0, 0, 0);
+  align-items: center;
+}
+
+.app-action-bar i {
+  color: white;
+  font-size: 17px;
+  padding: 0.5em 0.8em;
+}
+
+.app-action-bar i:hover {
+  background: #3939398a;
+}
+
+.app-action-bar i.fa-times:hover {
+  background: rgb(235, 28, 28);
+}
+
+.chrome-window {
+  height: 700px;
+  width: 900px;
+  background: white;
+  position: absolute;
+  top: 100px;
+  display: none;
+  left: 100px;
+  z-index: 99;
 }
